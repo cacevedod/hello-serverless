@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build sin test') {
       steps {
-        nodejs(nodeJSInstallationName: 'nodejs12') {
+        nodejs(nodeJSInstallationName: 'nodejs') {
           sh 'npm install'
           sh 'npm rebuild'
           sh 'npm run build --skip-test'
@@ -15,7 +15,7 @@ pipeline {
     stage('unitTest') {
       steps {
         //unstash "ws"
-        nodejs(nodeJSInstallationName: 'nodejs12') {
+        nodejs(nodeJSInstallationName: 'nodejs') {
           sh 'npm run test:coverage && cp coverage/lcov.info lcov.info || echo "Code coverage failed"'
           archiveArtifacts(artifacts: 'coverage/**', onlyIfSuccessful: true)
         }
