@@ -1,4 +1,4 @@
-service: hello-serverless-cacevedod
+service: hello-serverless-cacevedod1
 
 provider:
   name: aws
