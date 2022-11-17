@@ -4,12 +4,12 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "aws-sdk": "^2.665.0",
-    "aws-sdk-mock": "^5.1.0",
+    "aws-sdk": "^2.1256.0",
+    "aws-sdk-mock": "^5.8.0",
     "jest": "^26.0.1",
-    "serverless": "^1.68.0",
-    "serverless-dynamodb-local": "^0.2.39",
-    "serverless-offline": "^6.1.4"
+    "serverless": "^3.24.1",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^11.4.0"
   },
   "devDependencies": {},
   "scripts": {
